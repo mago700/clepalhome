@@ -105,9 +105,9 @@ public class DBService {
 		
 		Cliente cli1 = new Cliente(null, "Celio Sato", "mago70@gmail.com");
 		Cliente cli2 = new Cliente(null, "Midori Yano", "amorebf@gmail.com");
-		Cliente cli3 = new Cliente(null, "Bruna Sato", "brunayumi@gmail.com");
+		Cliente cli3 = new Cliente(null, "Bruna Sato", "gamesdalan@gmail.com");
 		Cliente cli4 = new Cliente(null, "Felipe Sato", "celiosato4@gmail.com");
-		Cliente cli5 = new Cliente(null, "Igor Sato", "mago70@hotmail.com");
+		Cliente cli5 = new Cliente(null, "Igor Sato", "mago70@gmail.com");
 		
 		Morada mor1 = new Morada(null, "Portugal", "Rua da Agua Levada, 64", "Santa Eulalia", "4425-410", "Vizela", cli1);
 		Morada mor2 = new Morada(null, "Portugal", "Travessa Giesta, 64", "Santa Eulalia", "4425-410", "Pedrouços", cli2);

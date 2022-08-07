@@ -2,6 +2,7 @@ package com.clepalhome.vendas.resources;
 
 import java.net.URI;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
@@ -11,6 +12,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +29,7 @@ import com.clepalhome.vendas.services.ProdutoService;
 
 @RestController
 @RequestMapping(value="/produtos") //end point categorias
-
+@CrossOrigin("*")
 public class ProdutoResource {
 	
 	@Autowired
@@ -66,6 +68,8 @@ public class ProdutoResource {
 			service.delete(id);
 			return ResponseEntity.noContent().build();
 		}
+		
+
 	
 //==================================== PAGINAÇÃO =============================================
 	@RequestMapping(method=RequestMethod.GET)// verbos GET, POST, DELETE

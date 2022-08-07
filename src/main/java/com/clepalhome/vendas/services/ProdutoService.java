@@ -81,6 +81,7 @@ public class ProdutoService {
 			}
 	}
 	
+
 //==================================== ALTERAR =============================================
 	public Page<Produto> search(String nome, List<Integer> ids, Integer page, Integer linesPerPage, String orderBy, String direction){
 		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);

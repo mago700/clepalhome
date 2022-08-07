@@ -68,8 +68,6 @@ public class ProdutoResource {
 			service.delete(id);
 			return ResponseEntity.noContent().build();
 		}
-		
-
 	
 //==================================== PAGINAÇÃO =============================================
 	@RequestMapping(method=RequestMethod.GET)// verbos GET, POST, DELETE
